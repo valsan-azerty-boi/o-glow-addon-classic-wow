@@ -1,7 +1,7 @@
 ## Interface: 11302
 ## Title: oGlow
 ## Author: created by Haste, updated by valsan-azerty-boi
-## Version: 2.2.5
+## Version: 2.3.0-Beta
 ## SavedVariables: oGlowDB
 ## Notes: Make your shiny items... glow in the dark!
 
