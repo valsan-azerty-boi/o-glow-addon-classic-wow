@@ -1,9 +1,8 @@
-## Interface: 60000
+## Interface: 11302
 ## Title: oGlow
-## Author: Haste
+## Author: created by Haste, updated by valsan-azerty-boi
 ## Version: 2.2.5
 ## SavedVariables: oGlowDB
-## X-eMail: troeks@gmail.com
 ## Notes: Make your shiny items... glow in the dark!
 
 init.lua
