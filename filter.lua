@@ -35,7 +35,6 @@ do
 	end
 end
 
--- TODO: Validate that the display we try to use actually exists.
 function oGlow:RegisterFilterOnPipe(pipe, filter)
 	argcheck(pipe, 2, 'string')
 	argcheck(filter, 3, 'string')
@@ -43,7 +42,6 @@ function oGlow:RegisterFilterOnPipe(pipe, filter)
 	if(not pipesTable[pipe]) then return nil, 'Pipe does not exist.' end
 	if(not filtersTable[filter]) then return nil, 'Filter does not exist.' end
 
-	-- XXX: Clean up this logic.
 	if(not activeFilters[pipe]) then
 		local filterTable = filtersTable[filter]
 		local display = filterTable[1]
@@ -90,7 +88,6 @@ function oGlow:UnregisterFilterOnPipe(pipe, filter)
 	if(not pipesTable[pipe]) then return nil, 'Pipe does not exist.' end
 	if(not filtersTable[filter]) then return nil, 'Filter does not exist.' end
 
-	--- XXX: Be more defensive here.
 	local filterTable = filtersTable[filter]
 	local ref = activeFilters[pipe][filterTable[1]]
 	if(ref) then

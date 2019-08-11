@@ -1,5 +1,4 @@
--- TODO:
---  - Write a description.
+-- merchant frame
 
 local _E
 local hook

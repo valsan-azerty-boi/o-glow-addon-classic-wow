@@ -1,6 +1,3 @@
--- TODO:
---  - Write a description.
-
 local _E
 local hook
 
@@ -58,5 +55,3 @@ local disable = function(self)
 
 	self:UnregisterEvent('ADDON_LOADED', ADDON_LOADED)
 end
-
-oGlow:RegisterPipe('gbank', enable, disable, update, 'Guild bank frame', nil)

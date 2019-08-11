@@ -1,6 +1,4 @@
--- TODO:
---  - Prevent unnecessary double updates.
---  - Write a description.
+-- bag frame
 
 local hook
 local _E

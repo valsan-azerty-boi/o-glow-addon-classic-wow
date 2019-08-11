@@ -47,7 +47,6 @@ function frame:CreateOptions()
 	scrollchild.rows = {}
 	scrollchild:SetPoint"LEFT"
 	scrollchild:SetHeight(scroll:GetHeight())
-	-- So we have correct spacing on the right side.
 	scrollchild:SetWidth(scroll:GetWidth() -16)
 	self.scrollchild = scrollchild
 
@@ -183,7 +182,6 @@ do
 		local sChild = self.scrollchild
 		local filterFrame = self.filterFrame
 
-		-- XXX: Rewrite this to use oGlow:GetNumFilters()
 		local filters = {}
 		for name, type, desc in oGlow.IterateFilters() do
 			table.insert(filters, {name = name; type = type, desc = desc})
@@ -192,19 +190,6 @@ do
 		local numFilters = #filters
 		local split = 2
 		if(numFilters > 1) then
-			-- You know.. after writing this.. I considered that I could just forget
-			-- about how the items had been ordered, and just do:
-			-- Item 1 <space> Item 2
-			-- Item 3 <space> [...]
-			--
-			-- But no! I had to do it like this... Ironically the filter order is...
-			-- UNDEFINED :D
-			--
-			-- Yes I almost fell of my chair when I discovered that :3 I'll just leave
-			-- this here as an reminder of the torment that was figuring out an integer
-			-- sequence that would satisfy my OCD.
-			--
-			-- Hopefully I'll get use for this later in some obscure scenario!
 			split = math.floor(numFilters / 2) + (numFilters % 2) + 1
 		end
 
@@ -241,8 +226,6 @@ do
 			filterFrame[i] = check
 		end
 
-		-- We set split to 2 above (which makes this work correctly for
-		-- numFilters == 1.
 		filterFrame:SetHeight(((split-1) * 16) + 28)
 		filterFrame:Hide()
 

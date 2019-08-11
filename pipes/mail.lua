@@ -1,5 +1,4 @@
--- TODO:
---  - Write a description.
+-- mail frame
 
 local _E
 local hook

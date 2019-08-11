@@ -1,3 +1,5 @@
+-- loot frame
+
 local hook
 local _E
 

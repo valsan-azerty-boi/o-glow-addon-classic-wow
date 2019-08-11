@@ -1,5 +1,4 @@
--- TODO:
---  - Write a description.
+-- character frame
 
 if(select(4, GetAddOnInfo("Fizzle"))) then return end
 

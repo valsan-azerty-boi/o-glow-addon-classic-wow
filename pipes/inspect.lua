@@ -1,6 +1,4 @@
--- TODO:
---  - Write a description.
--- we might want to merge this with char.lua...
+-- inspect frame
 
 if(select(4, GetAddOnInfo("Fizzle"))) then return end
 
